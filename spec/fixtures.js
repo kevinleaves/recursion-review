@@ -5,11 +5,11 @@ var validStrings, invalidStrings, // used for stringifyJSON and parseJSON specs
 
 var stringifiableObjects = [
   9,
-  null,
-  true,
+  null, //'null'
+  true, //'true'
   false,
-  'Hello world',
-  [],
+  'Hello world', // "'hello world'"
+  [], // '[]'
   [8],
   ['hi'],
   [8, 'hi'],
@@ -20,7 +20,7 @@ var stringifiableObjects = [
   {'a': 'apple'},
   {'foo': true, 'bar': false, 'baz': null},
   {'boolean, true': true, 'boolean, false': false, 'null': null },
-  // basic nesting
+  // // basic nesting
   {'a': {'b': 'c'}},
   {'a': ['b', 'c']},
   [{'a': 'b'}, {'c': 'd'}],
